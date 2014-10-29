@@ -1,14 +1,6 @@
 module.exports = {
   // mongoose schema, if you need project-specific config
-  config: {
-    template: {
-      environment: { type: String, default: 'Hi from `environment`' },
-      prepare: { type: String, default: 'Hi from `prepare`' },
-      test: { type: String, default: 'Hi from `test`' },
-      deploy: { type: String, default: 'Hi from `deploy`' },
-      cleanup: { type: String, default: 'Hi from `cleanup`' }
-    }
-  },
+  config: {},
   // Define project-specific routes
   //   all routes created here are namespaced within /:org/:repo/api/:pluginid
   //   req.project is the current project

@@ -4,7 +4,6 @@
   "description": "Violations reporter for Strider CD",
   "main": "webapp.js",
   "scripts": {
-    "test": "mocha -R spec --recursive test"
   },
   "repository": {
     "type": "git",
@@ -35,8 +34,5 @@
     }
   },
   "devDependencies": {
-    "chai": "^1.9.1",
-    "mocha": "^1.20.1",
-    "sinon-chai": "^2.5.0"
   }
 }

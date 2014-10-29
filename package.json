@@ -1,0 +1,42 @@
+{
+  "name": "strider-violations",
+  "version": "0.0.1",
+  "description": "Violations reporter for Strider CD",
+  "main": "webapp.js",
+  "scripts": {
+    "test": "mocha -R spec --recursive test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/WillHall/strider-violations.git"
+  },
+  "keywords": [
+    "strider",
+    "plugin",
+    "errors",
+    "visualization",
+    "JSLint",
+    "CSSLint",
+    "Todos"
+  ],
+  "author": "Will Hall <will@mrtheme.com>",
+  "license": "GPL V2",
+  "dependencies": {
+  },
+  "strider": {
+    "type": "job",
+    "id": "violations",
+    "title": "Strider Violations",
+    "worker": "worker.js",
+    "webapp": "webapp.js",
+    "icon": "icon.png",
+    "config": {
+      "controller": "ViolationsController"
+    }
+  },
+  "devDependencies": {
+    "chai": "^1.9.1",
+    "mocha": "^1.20.1",
+    "sinon-chai": "^2.5.0"
+  }
+}
